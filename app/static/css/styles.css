@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+ 
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #e8e8e8;
+    color: #4e5151;
+}
+
+.container{
+    position: relative;
+    color: #000;
+    background: rgba(0, 0, 0, 0.3);
+    
+    font-size: 1.8em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.container-form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    z-index: 0;
+}
+
+.form{
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    margin: 1em 1em;
+    width: 65vw;
+    height: 69vh;
+    margin-bottom: 0;
+    padding: 1em 2em;
+    z-index: 20;
+}
+
+textarea{
+    font-size: 1.2em;
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+    max-width: 60%;
+    min-width: 60%;
+    max-height: 50%;
+    min-height: 50%;
+    border-radius: 3%;
+    margin-bottom: 10px;
+}
+
+
+.options{
+    /* background: red; */
+    
+    position: absolute;
+    margin: 3.5em 8.5em;
+    font-weight: 700;
+    top: 0;
+    padding: 0;
+    right: 0;
+    width: 20%;
+    height: 40%;
+}
+input[type="radio"]{
+    display: none;
+}
+label{
+    position: relative;
+    font-size: 1.3em;
+    color: black;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px 50px;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    cursor: pointer;
+}
+
+/* label::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border: 3px solid red;
+    border-radius: 50%;
+    margin-right: -10px;
+} */
+
+input[type="radio"]:checked + label {
+    background-color: black;
+    color: white;
+}
+
+
+span{
+    position: relative;
+    margin: auto;
+}
+.option{
+    margin: 0px 0px;
+}
+.aux{
+    font-weight: 700;
+    margin-top: 1em;
+}
+.salida{
+    margin-top: 0px;
+    width: 60%;
+    height: 20%; 
+    max-width: 60%;
+    min-width: 60%;
+    max-height: 20%;
+    min-height: 20%;
+    border-radius: 3%;
+} 
+.boton-calcular{
+    position: absolute;
+    
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 50px;
+    margin: 1.5em 6.7em;
+    bottom: 0;
+    border-radius: 4%;
+    right: 0;
+}
+
+img{
+    
+    width: auto;
+    height: 100%;
+} 
+
+.input-clave{
+    display : none;
+    position: absolute;
+    width: 30%;
+    right: 0;
+    margin: -7.5em 3em;
+}

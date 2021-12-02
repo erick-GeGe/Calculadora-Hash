@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora hash</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container" >
+            <h1>Calculadora para funciones hash</h1>
+            <p>Escuela de Ciencia de la Computación - UNSA</p> 
+        </div> 
+    </header>
+     
+    <main>
+        <div class="container-form"> 
+            <img src="{{ url_for('static', filename='imgs/background02.jpg') }}" alt="encryption">
+        </div>
+        <div class="form">
+            <p class="aux">Texto claro</p>
+            <textarea id="text-claro" class="texto-claro" placeholder="Ingrese el texto claro aqui" cols="30" rows="10"></textarea> 
+            <div class="options">
+                
+                <input onclick="ocultar()" class="option" type="radio" name="operation" id="md4" value="MD4" checked="checked">
+                <label for="md4"><span>MD4</span></label><br>
+                
+                <input onclick="ocultar()" class="option" type="radio" id="md5" name="operation" value="MD5">
+                <label for="md5"><span>MD5</span></label><br>
+            
+            
+                <input onclick="ocultar()" class="option" type="radio" id="sha1" name="operation" value="SHA1">
+                <label for="sha1"><span>SHA1</span></label><br>
+            
+            
+                <input onclick="ocultar()" class="option" type="radio" id="sha256" name="operation" value="SHA256">
+                <label for="sha256"><span>SHA256</span></label><br>
+            
+                <input onclick="mostrar()" class="option" type="radio" id="hmac" name="operation" value="HMAC">
+                <label for="hmac"><span>HMAC</span></label>
+                
+            </div><br>
+            <p class="aux">Hash generado</p>
+            <textarea id="output" class="salida" readonly="readonly" type="text" cols="30" rows="5" name="cifrado" ></textarea> 
+            <div id="input-clave" class="input-clave" display="none">
+                Ingrese clave <br>
+                <input id="clave-input" class="clave" type="text">
+            </div>
+            <input class="boton-calcular" type="button" onclick="calcular()" value="Generar">
+        
+
+    </main>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
