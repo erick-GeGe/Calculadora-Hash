@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-import m_hash
-import json
+import src.m_hash as m_hash
 
 
 app = Flask(__name__)
