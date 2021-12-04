@@ -2,7 +2,7 @@
 
 La calculadora soporta operaciones MD4, MD5, SHA1, SHA256, HMAC, para este ultimo se hace uso de una contraseña, en la interfaz saldra la opcion de contraseña cuando el HMAC se encuentre seleccionado.
 
-Es proyecto esta construido con Flask, python y javascript para calcular las operaciones y html, css y javascript para la fronted.
+Es proyecto esta construido con Flask, python y javascript para calcular las operaciones y html, css y javascript para el fronted.
 
 Los requerimientos para correr la calculadora son:
 ```
